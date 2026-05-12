@@ -30,15 +30,14 @@
 
 ### Локальный запуск тестов из терминала
 
-Запуск локально (local) на эмуляторе:
+Запуск на эмуляторе через Android Studio:
 ```bash 
- ./gradle clean local_test -DdeviceHost=local
+ gradle clean local.properties
 ```
-> Для запуска локальных тестов на компьютере должны быть установлены Android Studio, Appium Server и Appium ([инструкция](https://autotest.how/appium-setup-for-local-android-tutorial-md))
 
-Запуск удаленно (remote) на Browserstack:
+Запуск на реальном устройстве на Андроид:
 ```bash 
- ./gradle clean remote_test -DdeviceHost=remote
+ gradle clean emulator.properties
 ```
 
 <a id="allure"></a>
