@@ -3,9 +3,10 @@
 ## :pushpin: Содержание:
 
 - <a href="#tools">Технологии и инструменты</a>
-- <a href="#jenkins">Сборка в Jenkins</a>
 - <a href="#allure">Пример Allure-отчета</a>
-- <a href="#telegram">Уведомление в Telegram при помощи бота</a>
+- <a href="#video1">Пример видео с реального Андроид устройства</a>
+- <a href="#video2">Пример видео с эмулятора</a>
+
 
 <a id="tools"></a>
 ## :computer: Использованный стек технологий
@@ -25,9 +26,21 @@
 - В качестве сборщика был использован - <code>Gradle</code>.
 - Использованы фреймворки <code>JUnit 5</code> и [Selenide](https://selenide.org/).
 
+
+##  Запуск автотестов
+Запуск тестов на реальном Андроид устройстве:
+```
+ gradle clean local.properties
+```
+
+
+Запуск тестов на эмуляторе через Android Studio:
+```
+ gradle clean emulator.properties
+```
+
 <a id="allure"></a>
 ## <img src="media/logo/Allure_Report.svg" title="Allure Report" width="4%"/> Пример [Allure-отчета](https://allurereport.org)
-
 
 ### Результат выполнения тестов
 
@@ -35,19 +48,15 @@
 <img title="Test Results in Alure" src="media/screens/Result.PNG">
 </p>
 
-<p align="center">
-<img width="70%" title="Telegram Notifications" src="media/video/1.mp4">
-</p>
-
-<a id="video"></a>
-## <img alt="Selenoid" height="25" src="images/logo/Selenoid.svg" width="25"/></a> Примеры видео выполнения тестов на Selenoid
+<a id="video1"></a>
+##  Пример видео выполнения тестов на реальном Android устройстве
 ____
 <p align="center">
 <img title="Selenoid Video" src="media/video/1.gif" width="350" height="650"  alt="video">   
 </p>
 
-<a id="video"></a>
-## <img alt="Selenoid" height="25" src="images/logo/Selenoid.svg" width="25"/></a> Примеры видео выполнения тестов на Selenoid
+<a id="video2"></a>
+## Пример видео выполнения тестов на эмуляторе
 ____
 <p align="center">
 <img title="Selenoid Video" src="media/video/2.gif" width="350" height="650"  alt="video">   
