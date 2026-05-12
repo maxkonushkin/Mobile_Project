@@ -4,6 +4,8 @@
 
 - <a href="#tools">Технологии и инструменты</a>
 - <a href="#allure">Пример Allure-отчета</a>
+- <a href="#video1">Пример Видео с реального Андроид устройства</a>
+- <a href="#video2">Пример Видео с эмулятора</a>
 
 <a id="tools"></a>
 ## :computer: Использованный стек технологий
@@ -52,15 +54,15 @@
 <img width="70%" title="Telegram Notifications" src="media/video/1.mp4">
 </p>
 
-<a id="video"></a>
-## <img alt="Selenoid" height="25" src="images/logo/Selenoid.svg" width="25"/></a> Примеры видео выполнения тестов на Selenoid
+<a id="video1"></a>
+## <img alt="Selenoid" height="25" src="images/logo/Selenoid.svg" width="25"/></a> Примеры видео выполнения тестов на Андроид
 ____
 <p align="center">
 <img title="Selenoid Video" src="media/video/1.gif" width="350" height="650"  alt="video">   
 </p>
 
-<a id="video"></a>
-## <img alt="Selenoid" height="25" src="images/logo/Selenoid.svg" width="25"/></a> Примеры видео выполнения тестов на Selenoid
+<a id="video2"></a>
+## <img alt="Selenoid" height="25" src="images/logo/Selenoid.svg" width="25"/></a> Примеры видео выполнения тестов на Эмуляторе
 ____
 <p align="center">
 <img title="Selenoid Video" src="media/video/2.gif" width="350" height="650"  alt="video">   
