@@ -1,8 +1,10 @@
 package drivers;
 
 import com.codeborne.selenide.WebDriverProvider;
+import config.LocalConfig;
 import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.android.options.UiAutomator2Options;
+import org.aeonbits.owner.ConfigFactory;
 import org.openqa.selenium.Capabilities;
 import org.openqa.selenium.WebDriver;
 
@@ -15,6 +17,8 @@ import static io.appium.java_client.remote.MobilePlatform.ANDROID;
 
 public class LocalDriver implements WebDriverProvider {
 
+    private static final LocalConfig localConfig = ConfigFactory.create(LocalConfig.class, System.getProperties());
+
     @Nonnull
     @Override
     public WebDriver createDriver(@Nonnull Capabilities capabilities) {
@@ -22,10 +26,10 @@ public class LocalDriver implements WebDriverProvider {
 
         options.setAutomationName(ANDROID_UIAUTOMATOR2)
                 .setPlatformName(ANDROID)
-                .setPlatformVersion("9.0") // 17.0, 9.0
-                .setDeviceName("Galaxy S9") //Galaxy S9, Pixel 9 Pro
-                .setAppPackage("cz.bsc.rc") // org.wikipedia.alpha, cz.bsc.rc
-                .setAppActivity("ru.rencredit.authorization.splash.presentation.SplashActivity"); // org.wikipedia.main.MainActivity, ru.rencredit.authorization.splash.presentation.SplashActivity
+                .setPlatformVersion(localConfig.getPlatformVersion()) // 17.0, 9.0
+                .setDeviceName(localConfig.getDeviceName()) //Galaxy S9, Pixel 9 Pro
+                .setAppPackage("cz.bsc.rc")
+                .setAppActivity("ru.rencredit.authorization.splash.presentation.SplashActivity");
 
         return new AndroidDriver(getAppiumServerUrl(), options);
     }

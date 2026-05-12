@@ -13,8 +13,10 @@ import static com.codeborne.selenide.Selenide.closeWebDriver;
 import static com.codeborne.selenide.Selenide.open;
 
 public class TestBase {
+
     @BeforeAll
     static void beforeAll() {
+
         Configuration.browser = LocalDriver.class.getName();
         Configuration.browserSize = null;
         Configuration.timeout = 30000;

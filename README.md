@@ -35,11 +35,6 @@
 <img title="Test Results in Alure" src="media/screens/Result.PNG">
 </p>
 
-
-
-<a id="telegram"></a>
-## <img width="4%" style="vertical-align:middle" title="Telegram" src="media/logo/Telegram.svg"> Уведомления в Telegram с использованием бота
-
 <p align="center">
 <img width="70%" title="Telegram Notifications" src="media/video/1.mp4">
 </p>
@@ -48,5 +43,12 @@
 ## <img alt="Selenoid" height="25" src="images/logo/Selenoid.svg" width="25"/></a> Примеры видео выполнения тестов на Selenoid
 ____
 <p align="center">
-<img title="Selenoid Video" src="media/video/1.mp4" width="350" height="650"  alt="video">   
+<img title="Selenoid Video" src="media/video/1.gif" width="350" height="650"  alt="video">   
+</p>
+
+<a id="video"></a>
+## <img alt="Selenoid" height="25" src="images/logo/Selenoid.svg" width="25"/></a> Примеры видео выполнения тестов на Selenoid
+____
+<p align="center">
+<img title="Selenoid Video" src="media/video/2.gif" width="350" height="650"  alt="video">   
 </p>
