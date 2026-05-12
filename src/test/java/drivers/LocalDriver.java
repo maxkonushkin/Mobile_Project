@@ -29,10 +29,10 @@ public class LocalDriver implements WebDriverProvider {
         options.setAutomationName(ANDROID_UIAUTOMATOR2)
                 .setPlatformName(ANDROID)
                 .setPlatformVersion("9.0") // 17.0, 9.0
-                .setDeviceName("Galaxy S9") //Galaxy S9, Pixel 9
-                .setApp(getAppPath())
-                .setAppPackage("cz.bsc.rc") // org.wikipedia.alpha
-                .setAppActivity("ru.rencredit.authorization.splash.presentation.SplashActivity"); // org.wikipedia.main.MainActivity
+                .setDeviceName("Galaxy S9") //Galaxy S9, Pixel 9 Pro
+//                .setApp(getAppPath())
+                .setAppPackage("cz.bsc.rc") // org.wikipedia.alpha, cz.bsc.rc
+                .setAppActivity("ru.rencredit.authorization.splash.presentation.SplashActivity"); // org.wikipedia.main.MainActivity, ru.rencredit.authorization.splash.presentation.SplashActivity
 
         return new AndroidDriver(getAppiumServerUrl(), options);
     }
@@ -45,20 +45,20 @@ public class LocalDriver implements WebDriverProvider {
         }
     }
 
-    private String getAppPath() {
-        String appVersion = "app-ren.apk";
-        String appUrl = "https://github.com/wikimedia/apps-android-wikipedia" +
-                "/releases/tag/latest/" + appVersion;
-        String appPath = "src/test/resources/apps/" + appVersion;
-
-        File app = new File(appPath);
-        if (!app.exists()) {
-            try (InputStream in = new URL(appUrl).openStream()) {
-                copyInputStreamToFile(in, app);
-            } catch (IOException e) {
-                throw new AssertionError("Failed to download application", e);
-            }
-        }
-        return app.getAbsolutePath();
-    }
+//    private String getAppPath() {
+//        String appVersion = "app-alpha-universal-release.apk";
+//        String appUrl = "https://github.com/wikimedia/apps-android-wikipedia" +
+//                "/releases/tag/latest/" + appVersion;
+//        String appPath = "src/test/resources/apps/" + appVersion;
+//
+//        File app = new File(appPath);
+//        if (!app.exists()) {
+//            try (InputStream in = new URL(appUrl).openStream()) {
+//                copyInputStreamToFile(in, app);
+//            } catch (IOException e) {
+//                throw new AssertionError("Failed to download application", e);
+//            }
+//        }
+//        return app.getAbsolutePath();
+//    }
 }
