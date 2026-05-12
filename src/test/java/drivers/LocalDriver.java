@@ -4,20 +4,14 @@ import com.codeborne.selenide.WebDriverProvider;
 import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.android.options.UiAutomator2Options;
 import org.openqa.selenium.Capabilities;
-import org.openqa.selenium.MutableCapabilities;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.remote.RemoteWebDriver;
 
 import javax.annotation.Nonnull;
-import java.io.File;
-import java.io.IOException;
-import java.io.InputStream;
 import java.net.MalformedURLException;
 import java.net.URL;
 
 import static io.appium.java_client.remote.AutomationName.ANDROID_UIAUTOMATOR2;
 import static io.appium.java_client.remote.MobilePlatform.ANDROID;
-import static org.apache.commons.io.FileUtils.copyInputStreamToFile;
 
 public class LocalDriver implements WebDriverProvider {
 
@@ -30,7 +24,6 @@ public class LocalDriver implements WebDriverProvider {
                 .setPlatformName(ANDROID)
                 .setPlatformVersion("9.0") // 17.0, 9.0
                 .setDeviceName("Galaxy S9") //Galaxy S9, Pixel 9 Pro
-//                .setApp(getAppPath())
                 .setAppPackage("cz.bsc.rc") // org.wikipedia.alpha, cz.bsc.rc
                 .setAppActivity("ru.rencredit.authorization.splash.presentation.SplashActivity"); // org.wikipedia.main.MainActivity, ru.rencredit.authorization.splash.presentation.SplashActivity
 
@@ -45,20 +38,4 @@ public class LocalDriver implements WebDriverProvider {
         }
     }
 
-//    private String getAppPath() {
-//        String appVersion = "app-alpha-universal-release.apk";
-//        String appUrl = "https://github.com/wikimedia/apps-android-wikipedia" +
-//                "/releases/tag/latest/" + appVersion;
-//        String appPath = "src/test/resources/apps/" + appVersion;
-//
-//        File app = new File(appPath);
-//        if (!app.exists()) {
-//            try (InputStream in = new URL(appUrl).openStream()) {
-//                copyInputStreamToFile(in, app);
-//            } catch (IOException e) {
-//                throw new AssertionError("Failed to download application", e);
-//            }
-//        }
-//        return app.getAbsolutePath();
-//    }
 }
