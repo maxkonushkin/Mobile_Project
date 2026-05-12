@@ -25,6 +25,22 @@
 - В качестве сборщика был использован - <code>Gradle</code>.
 - Использованы фреймворки <code>JUnit 5</code> и [Selenide](https://selenide.org/).
 
+- ```
+## :arrow_forward: Запуск автотестов
+
+### Локальный запуск тестов из терминала
+
+Запуск локально (local) на эмуляторе:
+```bash 
+ ./gradle clean local_test -DdeviceHost=local
+```
+> Для запуска локальных тестов на компьютере должны быть установлены Android Studio, Appium Server и Appium ([инструкция](https://autotest.how/appium-setup-for-local-android-tutorial-md))
+
+Запуск удаленно (remote) на Browserstack:
+```bash 
+ ./gradle clean remote_test -DdeviceHost=remote
+```
+
 <a id="allure"></a>
 ## <img src="media/logo/Allure_Report.svg" title="Allure Report" width="4%"/> Пример [Allure-отчета](https://allurereport.org)
 
