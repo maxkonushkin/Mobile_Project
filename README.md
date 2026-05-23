@@ -12,14 +12,30 @@
 ## :computer: Использованный стек технологий
 
 <p align="center">
+<a href="https://www.jetbrains.com/idea/" target="_blank">
 <img width="6%" title="IntelliJ IDEA" src="media/logo/Intelij_IDEA.svg">
-<img width="6%" title="Java" src="media/logo/Java.svg">
-<img width="6%" title="Selenide" src="media/logo/Selenide.svg">
-<img width="6%" title="Selenoid" src="media/logo/androidstudio.svg">
-<img width="6%" title="Allure Report" src="media/logo/Allure_Report.svg">
-<img width="6%" title="Gradle" src="media/logo/Gradle.svg">
-<img width="6%" title="JUnit5" src="media/logo/JUnit5.svg">
+</a>
+<a href="https://github.com" target="_blank">
 <img width="6%" title="GitHub" src="media/logo/GitHub.svg">
+</a>
+<a href="https://www.java.com" target="_blank">
+<img width="6%" title="Java" src="media/logo/Java.svg">
+</a>
+<a href="https://selenide.org" target="_blank">
+<img width="6%" title="Selenide" src="media/logo/Selenide.svg">
+</a>
+<a href="https://gradle.org" target="_blank">
+<img width="6%" title="Gradle" src="media/logo/Gradle.svg">
+</a>
+<a href="https://junit.org/junit5/" target="_blank">
+<img width="6%" title="JUnit5" src="media/logo/JUnit5.svg">
+</a>
+<a href="https://allurereport.org/" target="_blank">
+<img width="6%" title="Allure Report" src="media/logo/Allure_Report.svg">
+</a>
+
+
+
 </p>
 
 - В данном проекте автотесты написаны на языке <code>Java</code> с использованием фреймворка для тестирования Selenide.
